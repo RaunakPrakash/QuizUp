@@ -17,15 +17,6 @@ type Mongo struct {
 }
 
 
-type Redis struct {
-
-}
-
-
-type Rabbit struct {
-
-}
-
 func (m *Mongo) SetCollection(ctx context.Context,db,cl string) error {
 	col,err := mongoDriver.GetCollection(ctx,db,cl)
 	if err!=nil {
