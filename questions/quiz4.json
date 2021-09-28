@@ -1,0 +1,27 @@
+{
+  "quiz" : [
+    { "q": "Triangle all sides are equal?",
+      "options" : ["Equilateral Triangle","Right Angled Triangle","Isosceles Triangle","Scalene Triangle"],
+      "a": "Equilateral Triangle"
+    },
+    { "q": "5 to the power of 0 equals ?",
+      "options" : ["0","1", "25","50"],
+      "a": "1"
+    },
+    { "q": "Total degrees in the right angle?",
+      "options" : ["90","100", "80", "120"],
+      "a": "90"
+    },
+    { "q": "How many years complete a decade?",
+      "options" : ["10","5", "20", "50"],
+      "a": "10"
+    },
+    { "q": "Percentage to be added to 40 to 50?",
+      "options" : ["25","90", "70", "15"],
+      "a": "25"
+    }
+  ]
+
+}
+
+

@@ -1,17 +1,18 @@
 package dataManager
 
 import (
-	"quiz/model"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"os"
+	"quiz/model"
+	"strconv"
 )
 
 
-func FetchQuestions() model.Questions {
+func FetchQuestions(k int) model.Questions {
 
-	jsonFile,err:= os.Open("quiz.json")
+	jsonFile,err:= os.Open("questions/quiz"+strconv.Itoa(k)+".json")
 	if err!=nil {
 		fmt.Println(err)
 	}
@@ -20,32 +21,11 @@ func FetchQuestions() model.Questions {
 
 	var questions model.Questions
 
-	json.Unmarshal(byteValue,&questions)
+	err = json.Unmarshal(byteValue, &questions)
+	if err != nil {
+		fmt.Println(err)
+	}
 
 	return questions
 
-	//for i,v :=  range questions.Questions {
-	//	ans:=""
-	//	fmt.Printf("Problem#%d ",i+1)
-	//	fmt.Println(string(v.Question))
-	//
-	//	fmt.Scanf("%s",&ans)
-	//	if ans==v.Answer {
-	//		fmt.Println()
-	//		fmt.Println("Correct!")
-	//		fmt.Println()
-	//	}else {
-	//		fmt.Println()
-	//		fmt.Println("Incorrect")
-	//		fmt.Println()
-	//		fmt.Printf("Do you want to play again? (y/n)")
-	//		a:=""
-	//		fmt.Scanf("%s",&a)
-	//		if a=="y"{
-	//			//startGame()
-	//		}else if a=="n"{
-	//			break
-	//		}
-	//	}
-	//}
 }

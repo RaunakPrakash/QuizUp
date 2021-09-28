@@ -1,7 +1,10 @@
 package main
 
-import "quiz/customui"
+import (
+	"quiz/customui"
+
+)
 
 func main() {
-	customui.SetupStartUI()
+	customui.StartGame()
 }

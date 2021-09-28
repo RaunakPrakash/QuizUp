@@ -1,0 +1,25 @@
+{
+  "quiz" : [
+    { "q": "X+Y+Z = X*Y*Z, X=?,Y=?,Z=?",
+      "options" : ["(2,3,4)","(1,2,3)","(1,2,5)","(2,1,7)"],
+      "a": "(1,2,3)"
+    },
+    { "q": "Which one is the whole number?",
+      "options" : ["3.4","-7.6", "2","0.1"],
+      "a": "2"
+    },
+    { "q": "The perimeter of a circle ?",
+      "options" : ["area","circle", "circumference", "radius"],
+      "a": "circumference"
+    },
+    { "q": "Solve: 15+ (-5x) =0",
+      "options" : ["3","2", "4", "5"],
+      "a": "3"
+    },
+    { "q": "Which one is a natural number.",
+      "options" : ["3","-3", "0", "-1"],
+      "a": "3"
+    }
+  ]
+
+}
